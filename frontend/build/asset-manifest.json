@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03507213.css",
+    "main.js": "/static/js/main.df281b85.js",
+    "static/media/background.jpg": "/static/media/background.c891bf5ed92fc6acdf9f.jpg",
+    "static/media/user (1).png": "/static/media/user (1).45a0af68515332b42be9.png",
+    "static/media/budget-planning.png": "/static/media/budget-planning.e1f0826733e5fd229efd.png",
+    "index.html": "/index.html",
+    "main.03507213.css.map": "/static/css/main.03507213.css.map",
+    "main.df281b85.js.map": "/static/js/main.df281b85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03507213.css",
+    "static/js/main.df281b85.js"
+  ]
+}
