@@ -45,17 +45,15 @@ const addTransaction = async (req, res) => {
 };
 const editTransaction = async (req,res) => {
   try {
-    const { userId, updatedProfile } = req.body;
-
-    // Find the user by ID and update the profile
-    const updatedUser = await userModel.findByIdAndUpdate(userId, updatedProfile, { new: true });
-
-    res.status(201).json(updatedUser);
+    
+   const updatedTransaction= await transactionModel.findByIdAndUpdate
+    ({_id:req.body.transactionId},req.body.payload , {new:true});
+    res.status(200).json(updatedTransaction);
+    // res.status(200).send('Transaction Edited Successfully');
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    console.log(error);
+    res.status(500).json(error);
   }
-
 };
 const deleteTransaction = async (req,res) => {
   try {
